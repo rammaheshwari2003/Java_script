@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                    // var a=10;
+                    // console.log(a);
+                    // var a=20;  // re declare allow using variable
+                    // console.log(a);
+
+        // let a=10;
+        // console.log(a);
+        // let a=20;   // re declare a variable cause error
+        // console.log(a);
+
+
+    /*    a=30;
+        console.log(a);
+        var a;
+    */
+
+     /*       b=20;
+            console.log(b);   // declare variable using let before use
+            let b;  
+    */ 
+
+        var a=10;
+        console.log(a);
+        {
+            var a=20;
+            console.log(a);
+        }
+        console.log(a);           
+
+
+        let b=10;
+        console.log(b);
+        {
+            let b=20;
+            console.log(b);
+        }
+        console.log(b);
+
+        const pi=3.14;
+        console.log(pi);
+
+        pi=56.678;   // you can not re assign value error
+        console.log(pi);
+
+
+        function display(){
+                document.getElementById("demo").innerHTML="I am ram maheshwari ";
+        }
+           
+</script>
+
+
+
+<button onclick="display()">Click Here</button>
+<h1 id="demo">Welcome to cybrom!!</h1>
+
+</body>
+</html>
