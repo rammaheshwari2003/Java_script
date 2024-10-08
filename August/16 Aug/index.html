@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo1">Welcome</h1>
+    <h1 id="demo2">Welcome</h1>
+    <script>
+        let str="Bhopal the city of lake's ";
+        console.log(str);
+
+        let str1='Welcome "to" cybrom ';
+        console.log(str1);
+
+        let a="Ram Maheshwari";
+        let mylen=a.length;
+        console.log(mylen);
+
+        let d="welcome 'to' \"Bhopal\" Cybrom ";
+        console.log(d);
+
+        let s='We "are" web \'developer\' from \\ Bhopal';
+        console.log(s);
+
+
+        // let st="We are cybrom student from bhopal ";
+        // let ans=st.slice(7,21);
+        // document.getElementById("demo1").innerHTML=st;
+        // document.getElementById("demo2").innerHTML=ans;
+
+        // let st="We are cybrom student from bhopal ";
+        // let ans=st.substring(7,21);
+        // document.getElementById("demo1").innerHTML=st;
+        // document.getElementById("demo2").innerHTML=ans;
+
+        let st="We are cybrom student from bhopal ";
+        let ans=st.substr(7,20);
+        document.getElementById("demo1").innerHTML=st;
+        document.getElementById("demo2").innerHTML=ans;
+
+
+        let s1="We are Bansal student from bhopal !";
+        let result=s1.replace("Bansal", "Cybrom");
+        document.getElementById("demo1").innerHTML=s1;
+        document.getElementById("demo2").innerHTML=result;
+
+    </script>
+
+</body>
+</html>
