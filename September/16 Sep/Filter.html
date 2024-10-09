@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Filter -->
+
+    <script>
+        // Even Number
+         const age=[34,22,33,35,46,67,31,45,78,40,11,28];
+         const ans=age.filter(function(key){
+            if(key%2==0){
+                return true;
+            }
+            else{
+                return false;
+            }
+         })
+         console.log(age);
+         console.log(ans);
+
+
+
+        // Arrow function use
+
+        const age1=[34,22,33,35,46,67,31,45,78,40,11,28];
+        const ans1=age1.filter((key)=>{
+            if(key%2==0){
+                return true;
+            }
+        })
+        console.log(age1);
+        console.log(ans1);
+
+
+    //  Arrow funtion use ( Short Method)
+    const age2=[34,22,33,35,77,85,99,98,55,46,67,31,45,78,40,11,28];
+        const ans3=age2.filter(item=>item%2==0)
+        console.log(age2);
+        console.log(ans3);
+           </script>
+
+</body>
+</html>
