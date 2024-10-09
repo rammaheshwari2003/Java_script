@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 380px;
+            border: 10px solid rgb(212, 235, 200);
+            padding: 30px;
+            margin: auto;
+            margin-top: 60px;
+            border-radius: 15px;
+            /* background-color: black; */
+        }
+        #txtbox{
+            width: 350px;
+            height: 50px;
+            border: 1px solid black;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: end;
+            border-radius: 10px;
+            }
+            button{
+                padding: 10px;
+                font-size: 30px;
+                margin: 10px;
+                border-radius: 50px;
+                box-shadow: 0px 0px 5px 3px rgb(204, 150, 150);
+                cursor:pointer;
+                width: 70px;
+                height: 70px;
+                font-size: 30px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body bgcolor="black">
+    
+    <div id="box">
+       <input type="text" id="txtbox" placeholder="0">
+       
+       <button id="btn1" onclick="document.getElementById('txtbox').value+=document.getElementById('btn1').innerHTML">1</button>
+       <button id="btn2" onclick="document.getElementById('txtbox').value+=document.getElementById('btn2').innerHTML">2</button>
+       <button id="btn3" onclick="document.getElementById('txtbox').value+=document.getElementById('btn3').innerHTML">3</button>
+       <button id="btn4" onclick="document.getElementById('txtbox').value+=document.getElementById('btn4').innerHTML">4</button>
+       <button id="btn5" onclick="document.getElementById('txtbox').value+=document.getElementById('btn5').innerHTML">5</button>
+       <button id="btn6" onclick="document.getElementById('txtbox').value+=document.getElementById('btn6').innerHTML">6</button>
+       <button id="btn7" onclick="document.getElementById('txtbox').value+=document.getElementById('btn7').innerHTML">7</button>
+       <button id="btn8" onclick="document.getElementById('txtbox').value+=document.getElementById('btn8').innerHTML">8</button>
+       <button id="btn9" onclick="document.getElementById('txtbox').value+=document.getElementById('btn9').innerHTML">9</button>
+       <button id="btn0" onclick="document.getElementById('txtbox').value+=document.getElementById('btn0').innerHTML">0</button>
+
+       <button id="btnplus" onclick="document.getElementById('txtbox').value+=document.getElementById('btnplus').innerHTML">+</button>
+       <button id="btnsub" onclick="document.getElementById('txtbox').value+=document.getElementById('btnsub').innerHTML">-</button>
+       <button id="btndiv" onclick="document.getElementById('txtbox').value+=document.getElementById('btndiv').innerHTML">/</button>
+       <button id="btnmulti" onclick="document.getElementById('txtbox').value+=document.getElementById('btnmulti').innerHTML">*</button>
+
+       <button onclick="document.getElementById('txtbox').value=eval(document.getElementById('txtbox').value)">=</button>
+
+       <button onclick="document.getElementById('txtbox').value=''">AC</button>
+       <button onclick="dataRemove()">X</button>
+    
+    </div>
+
+
+    <script>
+        function dataRemove(){
+            let a=document.getElementById('txtbox').value;
+            let mylen=a.length;
+            let ans=a.slice(0,mylen-1);
+            document.getElementById('txtbox').value=ans;
+        }
+
+    </script>
+</body>
+</html>
