@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+            const msec=Date.parse("2003-03-18");
+            document.write("<h1>",msec,"</h1>");
+
+         
+
+            const msec1=Date.parse("2024-08-17");
+            document.write("<h1>",msec1,"</h1>");
+
+            const msec2=new Date(675907200000);
+            document.write("<h1>",msec2,"</h1>");
+            document.write("<h1>","675907200000","</h1>");
+
+        </script>
+
+        <hr><hr>
+        <script>
+            let d=Date.now();
+            document.write("<h1>",d,"</h1>");
+
+            // get full year
+
+                const d1=new Date();
+                document.write("<h1>",d1,"</h1>");
+
+                const ans=d1.getFullYear();
+                document.write("<h1>",ans,"</h1>");
+                
+        </script>
+
+            <!-- Get month -->
+             <script>
+                    const m=new Date();
+                    document.write("<h1>",m,"</h1>");
+                    const mans=m.getMonth();
+                    const month=["January","February","March","April","May","June","July","August","September","October","November","December"];
+                    document.write("<h1>",mans," ",month[mans],"</h1>");
+
+             </script>
+</body>
+</html>
