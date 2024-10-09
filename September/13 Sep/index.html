@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            width: 350px;
+            border: 2px solid lightblue;
+            padding: 50px;
+        }
+        #d{
+            width: 350px;
+            border: 2px solid lightblue;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body  bgcolor="green">
+    
+     <button onclick="myAdd()">Click Here</button>
+     <script>
+            function myAdd(){
+                let btn=document.createElement("button");
+                    btn.innerHTML="Save";
+                    document.body.appendChild(btn);
+            }
+     </script>
+
+<hr> <hr>
+        <!-- 2nd -->
+         
+        <button onclick="MyData()">Click Here</button>
+        <div id="demo"></div>
+
+        <script>
+            function MyData(){
+                let my=document.createElement("h1");
+                       my.innerText="Welcome To Cybrom!";
+                       document.getElementById("demo").appendChild(my);
+            }
+        </script>
+
+<hr>
+<hr>
+<!-- 3rd -->
+<button onclick="myData()">Add More</button>
+        <div id="d">
+            <p>Enter Subject: <input type="text"></p>
+        </div>
+
+        <script>
+            function myData(){
+                let mysub=document.createElement("p");
+                       mysub.innerHTML="Enter Subject: <input type='text'>";
+                       document.getElementById("d").appendChild(mysub);
+            }
+        </script>
+    
+
+</body>
+</html>
