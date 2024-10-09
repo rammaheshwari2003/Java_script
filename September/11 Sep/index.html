@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inner HTML -->
+    <button onclick="display()">Click Here</button>
+    <h1 id="demo">Welcome to cybrom!!</h1>
+    <script>
+         function display(){
+         document.getElementById("demo").innerHTML="The city of lakes bhopal";
+         }
+    </script>
+
+<hr>
+<hr>
+
+<!-- Input value change -->
+
+  City <input type="text" value="Bhopal" id="ct">
+  <button onclick="changeVal()">Click</button> 
+    <script>
+        function changeVal(){
+            document.getElementById("ct").value="Indore";
+        }
+    </script>
+
+
+
+</body>
+</html>
