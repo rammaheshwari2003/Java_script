@@ -1,0 +1,6 @@
+Run JavaScript Everywhere
+Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+
+The json-server --watch db. json command is the most basic command to start JSON Server. However, JSON Server provides several other commands and options for more advanced use cases. This command starts JSON Server on port 4000 instead of the default port 3000.
+
+Today we will look into a very handy tool json-server, which can give you a mock rest json server in a minute. In a regular enterprise application, you work with many teams and third party APIs. Imagine you have to call a third party restful web service that will get you JSON data to work on. You are in a tight schedule, so you can’t wait for them to finish their work and then start your own. If you wish to have a mockup Rest Web service in place to get the demo data for you, then json-server is the tool you are looking for.

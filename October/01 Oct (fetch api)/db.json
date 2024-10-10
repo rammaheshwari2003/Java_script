@@ -1,0 +1,40 @@
+{
+    "students":[
+        {
+            "rollno":121,
+            "name":"sachin",
+            "city":"Bhopal",
+            "fees":34500
+        },
+        {
+            "rollno":122,
+            "name":"Sanjay",
+            "city":"Inodre",
+            "fees":40000
+        }
+    ],
+    
+    "result":[
+        {
+        "rollno":121,
+        "grade":"A",
+        "marks":400
+        },
+        {
+        "rollno":122,
+        "grade":"A",
+        "marks":400
+        }
+    ],
+
+    "subject":[
+        {
+            "rollno":121,
+            "subject":"cse,"
+        },
+        {
+            "rollno":121,
+            "subject":"bca,"
+        }
+    ]
+}  
