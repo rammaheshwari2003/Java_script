@@ -1,0 +1,29 @@
+{
+    "Students":[
+        {
+            "rollno":121,
+            "name":"Sumit",
+            "city":"Bhopal"
+        },
+        {
+            "rollno":122,
+            "name":"ram",
+            "city":"indore"
+        },
+        {
+            "rollno":123,
+            "name":"danish",
+            "city":"mp nagar"
+        },
+        {
+            "rollno":124,
+            "name":"pawan",
+            "city":"phanda"
+        },
+        {
+            "rollno":125,
+            "name":"sandeep",
+            "city":"karond"
+        }
+    ]
+}

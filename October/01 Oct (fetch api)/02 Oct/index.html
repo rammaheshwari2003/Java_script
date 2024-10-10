@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow">
+    
+        <button onclick="display()">Click Here</button>
+        <hr size="4" color="red">
+        <h1 id="demo">Welcome</h1>
+<!-- Async use to  (await) -->
+        <!-- <script>
+               async function display(){    // async
+                    let mydata=await fetch("new.txt");    // await
+                    let data= await mydata.text();       //  await
+                    document.getElementById('demo').innerHTML=data;
+                }
+        </script> -->
+
+
+        <script>
+           async function display(){
+                let table=`<table width="500" border="1">
+                            <tr>
+                            <td> Roll No </td>
+                            <td> Name </td>
+                            <td> City </td>
+                            </tr>`
+                    let api="http://localhost:4000/Students";
+                    let myObj=await fetch(api);
+                    let data=await myObj.json();
+                    data.map((key)=>{
+                        table+=`<tr>
+                                <td> ${key.rollno} </td>
+                                <td> ${key.name} </td>
+                                <td> ${key.city} </td>
+                                </tr>`
+                    })
+                    table+="</table>";
+                    document.getElementById("demo").innerHTML=table;
+                        
+            }
+        </script>
+</body>
+</html>
