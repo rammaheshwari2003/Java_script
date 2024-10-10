@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Set time out -->
+
+    <h1 id="demo">Welcome to cybrom</h1>
+    <script>
+        var myvl;
+        function myFun(){
+            document.getElementById("demo").innerHTML="Bhopal the city of lakes";
+        }
+        myvl=setTimeout(myFun, 5000);
+
+        function Stopnow(){
+            clearTimeout(myvl);
+        }                
+    </script>
+
+    <button onclick="Stopnow()">Stop</button>
+
+</body>
+</html>

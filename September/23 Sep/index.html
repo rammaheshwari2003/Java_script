@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+      <!-- SetInterval(fun,millisecond) -->
+
+
+        <p id="demo">Hello Friends!</p>
+
+        <script>
+            function display(){
+                // document.getElementById("demo").innerHTML="Welcome to Bhopal!!";
+                document.getElementById("demo").innerHTML+="Welcome to Bhopal!!";  
+            }
+              var s=setInterval(display,1000);
+
+                function mystop(){
+                        clearInterval(s);
+                }
+        </script>
+
+
+<button onclick="mystop()">Stop</button>
+
+
+
+<hr><hr>
+<p>Now date print</p>
+<br><br>
+
+<h1 id="demo-2">Hello</h1>
+<script>
+    function mydate(){
+        const d=new Date();
+        document.getElementById("demo-2").innerHTML=d;
+    }
+    setInterval(mydate,1000);
+</script>
+
+
+
+
+</body>
+</html>
