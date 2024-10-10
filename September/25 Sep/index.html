@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Spread operator(...) ==> three .  -->
+
+    <script>
+        const a=[1,2,3];
+        const b=[4,5,6];
+        // [1,2,3,4,5,6]  // ans
+
+        const c=[a,b];
+        console.log(c);  // [[1,2,3],[4,5,6]]
+
+        const d=[...a,...b];  // spred
+        console.log(d);  // [1,2,3,4,5,6]
+
+    </script>
+
+<!-- Destructor -->
+
+    <script>
+        console.log('----Destructor----');
+
+        const num=[1,2,3];
+        const [ a1,b1,c1]=num;
+        console.log(a1);
+        console.log(b1);
+        console.log(c1);
+
+        const student={"rollno":101, "name":"Ram","city":"Bhopal"};
+        const {rollno,name,city}=student;
+        console.log(rollno);
+        console.log(name);
+        console.log(city);
+    </script>
+
+
+        <script>
+
+            const n=[1,2,3,4,5,6];
+            const [a2,b2,c2,...etc]=n;
+            console.log(a2);
+            console.log(b2);
+            console.log(c2);
+            console.log(etc);
+            
+        </script>
+
+        <script>
+            const s1={"rollno":121,"name":"Krishna","city":"Mathura"};
+            const s1_detail={"class":"Btech","grade":"A","result":"Pass"};
+            const mystudent={...s1, ...s1_detail};
+            console.log(mystudent);
+        </script>
+
+        <script>
+             const data=["we","are","cybrom","student"];
+             console.log(data); //['we', 'are', 'cybrom', 'student']
+             console.log(...data); // we are cybrom student
+             console.log("we","are","cybrom","student"); // `we are cybrom student
+
+        </script>
+</body>
+</html>

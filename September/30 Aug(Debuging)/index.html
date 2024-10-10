@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="demo">Welcome</h1>
+    <button onclick="display()">click here</button>
+    <script>
+        function display(){
+            var a=123;
+            var b=0;
+            try{
+                if(b==0){
+                    throw "not divide by zero";
+                }
+                else{
+                 document.getElementById("demo").innerHTML+=
+                  '<br> Division of '+a+' by '+b + ' = '+a/b;
+                }
+            }
+            catch(e){
+                alert(e);
+            }
+        }
+    </script>
+    <hr> <hr> <hr> <hr> -->
+
+    Enter num 1 : <input type="text" id="no1"><br>
+    Enter num 2 : <input type="text" id="no2"><br>
+    <button onclick="display1()">Answer</button>
+    <h1 id="ans">My ans</h1>
+
+    <script>
+        function display1(){
+            let c;
+            try{
+            let a=document.getElementById("no1").value;
+            let b=document.getElementById("no2").value;
+            if(isNaN(a) || isNaN(b)){
+                throw "not use string value";
+            }
+            else{
+            if(b==0){
+                throw "not divide by zero";
+            }
+            else{
+                c=a/b;
+                document.getElementById('ans').innerHTML="Division: "+c;
+            }
+            }
+        }
+            catch(error){
+                document.getElementById("ans").innerHTML=error;
+            }
+            
+            finally{
+                document.getElementById("ans1").innerHTML;
+            }
+            }
+
+
+
+    </script>
+
+
+
+</body>
+</html>
