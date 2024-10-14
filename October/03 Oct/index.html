@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #demo{
+             display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color:azure;
+        }
+    </style>
+</head>
+<body bgcolor="aqua">
+        
+        <h1>Insert Students Data</h1>
+        Enter RollNo <input type="text" id="rno"> <br>
+        Enter Name <input type="text" id="nm"> <br>
+        Enter City <input type="text" id="ct"> <br>
+        Enter Fees <input type="text" id="fs"><br> <br>
+        <button id="btn1">Data Save</button>
+        <hr size="4" color="red">
+        <button id="btn2">Data Display</button>
+        <div id="main">
+        <p id="demo">Your data display...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
