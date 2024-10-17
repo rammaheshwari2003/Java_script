@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+        <button>Start Animation</button>
+        <div style="background: #98bf21;height: 100px;width: 100px;position: absolute;"></div>
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").animate({left: "250px"});
+                    $("div").animate({top: "250px"});
+                    $("div").animate({left: "8px"});
+                    $("div").animate({top: "29px"});
+                });
+            });
+        </script>
+</body>
+</html>
