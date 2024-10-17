@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    
+        <button>toggle box</button>
+
+        <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ratione. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur commodi totam quibusdam fuga ullam! Debitis placeat numquam tempore iusto officiis.</div>
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#box").toggle(3000);
+                })
+            })
+        </script>
+
+</body>
+</html>
