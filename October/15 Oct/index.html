@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+        <p>Welcome to cybrom Bhopal</p>
+        <p>We are web developer from bhopal</p>
+        <p>Hello friend's ! welcome to IT world</p>
+        <p>We learn java script and react js technology</p>
+
+        <script>
+            $(document).ready(function(){
+                $('p').click(function(){
+                    $(this).hide(3000);
+                })
+            })
+        </script>
+
+<hr> <hr>
+
+                <!-- Focus -->
+
+    Enter Name : <input type="text" name="" id=""> <br>
+    Enter City : <input type="text" name="" id=""> <br>
+    Enter Class : <input type="text" name="" id=""> <br>
+    Enter Mobile : <input type="text" name="" id=""> <br>
+    <button>click</button>
+
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color", "yellow");
+            })
+
+            $("input").blur(function(){
+                $(this).css("background-color", "white");
+            })
+        })
+    </script>
+
+    
+</body>
+</html>
