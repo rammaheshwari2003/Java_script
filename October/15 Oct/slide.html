@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        #box{
+            width: 300px;
+            padding: 20px;
+            border: 3px solid yellow;
+            background-color: rgb(239, 8, 85);
+        }
+
+        #box1{
+            width: 300px;
+            padding: 20px;
+            border: 5px solid pink;
+            background-color: rgb(16, 105, 130);
+            display: none;
+        }
+
+
+        #box2{
+            width: 300px;
+            padding: 20px;
+            border: 5px solid black;
+            background-color: rgb(13, 174, 64);
+        }
+    </style>
+</head>
+<body>
+        <!-- Slide Up -->
+    <button id="btn">Slide Up</button>
+    <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quos dignissimos, doloribus impedit sint, ipsum inventore eaque officia quasi, rerum ullam fuga tenetur sequi voluptatum. Perferendis porro est at eius!</div>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#box").slideUp(3000);
+            })
+        })
+    </script>
+<hr><hr>
+
+            <!-- Slide Down -->
+             <button id="btn1">Slide Down</button>
+             <div id="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste officiis ipsam repellat commodi cupiditate dolorem laudantium consequuntur, ipsum porro debitis necessitatibus molestiae unde amet omnis quasi assumenda, numquam doloremque! Ipsa.</div>
+             <script>
+                $(document).ready(function(){
+                    $("#btn1").click(function(){
+                        $("#box1").slideDown(4000);
+                    })
+                })
+             </script>
+
+           <hr> <hr>
+           
+           <!-- Slide Toggle  -->
+
+        <button id="btn2">Slide Toggle</button>
+        <div id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem modi et minus, fugit laboriosam, fugiat magnam at libero necessitatibus sapiente vel officiis deserunt eius odit tempore, sint repellendus eligendi hic!</div>
+        <script>
+                $(document).ready(function(){
+                    $("#btn2").click(function(){
+                        $("#box2").slideToggle(7000);
+                    })
+                })
+        </script>
+</body>
+</html>
