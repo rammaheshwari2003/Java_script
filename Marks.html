@@ -1,0 +1,46 @@
+<!-- 
+     Create form and find total marks and percentage of student
+     1. Enter Physics Marks
+     2. Enter chemistry Marks
+     3. Enter Math Marks
+     4. Enter English Marks
+     5. Enter Hindi Marks
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    st
+</head>
+<body>
+    
+        Enter Physics Marks: <input type="text" id="ph"> <br>
+        Enter Chemistry Marks: <input type="text" id="ch"> <br>
+        Enter Math Marks: <input type="text" id="math"> <br>
+        Enter Eng Marks: <input type="text" id="eng"> <br>
+        <button onclick="display()">Total</button> <br> <br> <br> <br>
+        <h1 id="total"></h1>
+        <h1 id="per"></h1>
+
+
+
+        <script>
+            function display(){
+            let phy=Number(document.getElementById("ph").value);
+            let che=Number(document.getElementById("ch").value);
+            let math=Number(document.getElementById("math").value);
+            let eng=Number(document.getElementById("eng").value);
+
+            let total=phy+che+math+eng;
+            let per=total*100.0/400;
+
+            document.getElementById("total").innerHTML="Total Number: "+total;
+            document.getElementById("per").innerHTML="Percentage: "+per+" % ";
+            }
+
+        </script>
+
+</body>
+</html>
